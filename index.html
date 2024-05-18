@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imc JavaScript</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <!-- Criando um conteiner para compor o nosson projeto  -->
+    <div class="conteiner">
+        <!-- Criando o nosso formulário -->
+        <form> 
+            <!-- Criando uma fieldset para colocarmos os nossos elementos -->
+            <fieldset>
+                <!-- Criando um título para nossa fieldset -->
+                <legend> Cálculo IMC </legend>
+                <!-- Criando a div informações onde conterão os nomes e a Idade do usuário -->
+                <!-- Mais logo logo quero colocar os nomes e até emails para fazer inegração com um banco de dados e uma API -->
+                <div class="div-informações">
+
+                    <!-- Div informações do nome do usuário -->
+                    <div class="name">
+                        <!-- Div para a estilização da tag Label que irá referenciar a tag input name -->
+                        <div class="name-label">
+                            <!-- Tag Label que irá referenciar a tag input name -->
+                            <label for="name">Digite o Seu nome</label>
+                        </div>
+                        <br>
+                        <!-- Div para a estilização da tag input name propriamente dita -->
+                        <div class="name-input">
+                            <!-- tag input name propriamente dita -->
+                            <input type="text" name="name" id="name" placeholder="Digite o Seu nome" value="">
+                        </div>
+                    </div>
+                    
+                    <!-- Mesmas referências da div name, porém com os proprios elementos -->
+                    <div class="idade">
+                        <div class="idade-label">
+                            <label for="number">Digite a sua idade</label>
+                        </div>
+                        <br>
+                        <div class="idade-input">
+                            <input type="number" name="name" id="number" placeholder="Digite o Seu número"
+                                maxlength="3">
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Mesmas referências da div name, porém com os proprios elementos -->
+                <div class="peso">
+                    <div class="peso-label">
+                        <label for="number">Digite o seu peso</label>
+                    </div>
+                    <br>
+                    <div class="peso-input">
+                        <input type="number" name="name" id="peso" placeholder="Digite o Seu peso" maxlength="3">
+                    </div>
+                </div>
+
+                <!-- Mesmas referências da div name, porém com os proprios elementos -->
+                <div class="altura">
+                    <div class="altura-label">
+                        <label for="altura">Digite a sua altura</label>
+                    </div>
+                    <br>
+                    <div class="altura-input">
+                        <input type="number" name="name" id="altura" placeholder="Digite a Sua altura" maxlength="3">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+
+        <!-- Div onde irá comportar a resposta do nosso projeto dada pelo JavaScript -->
+        <div class="resultado">
+
+            <div class="conteudo-resultado">
+                <div class="resultado-titulo">
+                    <button id="btn">Fazer o Teste</button>
+                </div>
+                <div class="resultado-resultado">
+                    <p id="resultado" value="teste">Resultado do Teste</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="./src/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.conteiner {
+    background-color: #d1d1d1;
+    width: 50%;
+    height: calc(100vh - 60px);
+    margin: 10px auto;
+}
+
+fieldset {
+    margin: 10px 30px;
+    border-radius: 10px;
+}
+
+legend {
+    text-align: center;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+div.div-informações {
+    display: flex;
+    justify-content: space-between;
+    justify-self: baseline;
+}
+div.name, div.idade {
+    flex-grow: 1;
+}
+
+div.name, div.idade, div.peso, div.altura, div.altura{
+    margin: 0 20px;
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+div.name div.name-label,
+div.idade div.idade-label,
+div.peso div.peso-label,
+div.altura div.altura-label {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 40px;
+}
+
+div.name div.name-input,
+div.idade div.idade-input,
+div.peso div.peso-input,
+div.altura div.altura-input {
+    width: 50%;
+    background-color: yellow;
+    margin: 0 auto;
+}
+
+div.name input,
+div.idade input,
+div.peso input,
+div.altura input {
+    text-align: center;
+    width: 100%;
+    height: 30px;
+}
+
+div.resultado {
+    height: 150px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+div.resultado div.conteudo-resultado {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+div.resultado div.conteudo-resultado div.resultado-titulo {
+    width: 200px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+div.resultado div.conteudo-resultado div.resultado-titulo button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 50px;
+    background-color: red;
+    color: black;
+    font-weight: 600;
+}
+
+div.resultado div.conteudo-resultado div.resultado-titulo button:hover {
+    transition: .5s;
+    opacity: .8;
+    border: 2px solid red;
+    box-shadow: 5px 5px 10px;
+    cursor: pointer;
+}
+
+div.resultado div.conteudo-resultado div.resultado-resultado {
+    background-color: #f1f1f1;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    border: 2px ridge red;
+}
+
+div.resultado div.conteudo-resultado div.resultado-resultado p {
+    font-size: 1.1em;
+    font-weight: 500;
+    text-align: justify;
+    line-height: 20px;
+    padding: 5px;
+}
